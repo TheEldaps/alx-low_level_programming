@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - a programme that prints all the possible
- * combination of single digit number
+ * main - Entry point
  *
- * Return - Always 0 (Success)
+ * Description: 'the program's description'
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -14,7 +15,7 @@ int main(void)
 	while (n <= '9')
 	{
 		putchar(n);
-			if (n != 9)
+			if (n != '9')
 			{
 				putchar(',');
 				putchar(' ');
