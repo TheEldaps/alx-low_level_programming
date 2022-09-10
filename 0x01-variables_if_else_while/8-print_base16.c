@@ -11,8 +11,8 @@ int main(void)
 {
 	int hex_d = 0;
 	int hex_l = 9;
-	char hex_a = 'A';
-	char hex_b = 'F';
+	char hex_a = 'a';
+	char hex_b = 'f';
 	char n = '\n'
 
 	; while (hex_d <= hex_l)
