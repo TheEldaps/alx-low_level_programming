@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
  * jack_bauer - prints everytick of the secobd throughout the day
  * Return: the exit point for the programnd
