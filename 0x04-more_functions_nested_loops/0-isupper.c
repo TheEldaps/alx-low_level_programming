@@ -2,6 +2,7 @@
 /**
  *_isupper -  inficates if a parameter is uppecase
  *Return: 0 is returned if lowercase, else 1
+ *@c: parameter
  */
 
 int _isupper(int c)
