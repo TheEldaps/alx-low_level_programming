@@ -2,7 +2,7 @@
 
 /**
  *_isdigit - checks if the value for see is a number
- *@c:the argument passed to the function 
+ *@c:the argument passed to the function
  *Return: either 0 or 1
  */
 
