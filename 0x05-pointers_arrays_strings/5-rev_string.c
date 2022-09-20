@@ -3,7 +3,6 @@
  * rev_string - the function that reverses a string
  * @s: the argument
  * Return:
- *
  *@s: parameter
  * rev - reverse function
  * @a: parameter
