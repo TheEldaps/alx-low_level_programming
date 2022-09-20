@@ -24,3 +24,12 @@ int i, j;
 		i--;
 	}
 }
+
+void rev(char *a, char *b)
+{
+	char tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
