@@ -6,6 +6,12 @@
  *
  */
 
+/**
+ * rev - reverse function
+ * @a: parameter
+ * @b: another parameter
+ */
+
 void rev(char *a, char *b)
 {
 	char tmp;
