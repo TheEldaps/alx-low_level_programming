@@ -6,6 +6,15 @@
  *
  */
 
+void rev(char *a, char *b)
+{
+        char tmp;
+
+        tmp = *a;
+        *a = *b;
+        *b = tmp;
+}
+
 void rev_string(char *s)
 {
 int i, j;
@@ -23,13 +32,4 @@ int i, j;
 		j++;
 		i--;
 	}
-}
-
-void rev(char *a, char *b)
-{
-	char tmp;
-
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
 }
