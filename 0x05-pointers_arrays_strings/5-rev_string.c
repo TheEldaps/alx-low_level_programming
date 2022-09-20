@@ -4,9 +4,7 @@
  * @s: the argument
  * Return:
  *
- */
-
-/**
+ *@s: parameter
  * rev - reverse function
  * @a: parameter
  * @b: another parameter
