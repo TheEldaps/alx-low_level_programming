@@ -2,7 +2,7 @@
 
 /**
  * main - entry point of the programme
- * @argc: counts the number of arguments passed to the function 
+ * @argc: number of arguments passed to the function
  * @argv: argument vector of pointers to strings
  *
  * Return: always 0
