@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 /**
- *main- entry point of programme
- *Return: exit point of programme
- *@argc: parameter count
- *@argv: array of the arguments passed to the programme
+ * main - prints the name number of arguments passed to it
+ * @argc: number of arguments passed to the function
+ * @argv: argument vector of pointers to strings
+ *
+ * Return: always 0
  */
 
 int main(int argc, char *argv[] __attribute__((unused)))
