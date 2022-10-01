@@ -2,18 +2,18 @@
 
 /**
  * main - entry point of the programme
- * Return: exit point of the programme
- *@argc: argument count
- *@argv: array of string
+ * @argc: counts the number of arguments passed to the function 
+ * @argv: argument vector of pointers to strings
+ *
+ * Return: always 0
  */
-
 int main(int argc, char *argv[])
 {
-	int x;
+	int i;
 
-	for (x = 0; x < argc; x++)
+	for (i = 0; i < argc; i++)
 	{
-		printf("%s \n", argv[x]);
+		printf("%s\n", argv[i]);
 	}
 	return (0);
 }
