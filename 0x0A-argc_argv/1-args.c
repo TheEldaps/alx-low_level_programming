@@ -2,19 +2,14 @@
 #include <stdlib.h>
 
 /**
- * main - entry point of the programme
- * Return: exit point of the programme
- *@argc: argument count
- *@argv: array of string
- *@x: index to iterate through the elements of the string array
+ *Main: programme execution starts here
+ *Return: exit point of programme
+ *@argc: parameter count
+ *@argv: array of the arguments passed to the programme 
  */
 
 int main(int argc, char *argv[])
 {
-	int x = 0;
-	for (; x < argc; x++)
-	{
-		printf("%s \n", argv[x]);
-	}
+	printf("%d \n", argc);
 	return (0);
 }
