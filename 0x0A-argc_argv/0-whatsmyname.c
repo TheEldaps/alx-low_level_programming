@@ -3,13 +3,11 @@
 
 /**
  * main - program entry point
- * Return: 0
- *@argc: stores string counts
- *@argv: array of pointers to string
- *@i: variable
+ * @argc: stores the number arguments to the programme
+ * @argv: array of strings passed to the programme
+ * Return: exit of the programme
  *
  */
-
 
 int main(int argc, char *argv[])
 {
