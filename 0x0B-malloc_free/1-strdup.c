@@ -30,7 +30,7 @@ char *_strdup(char *str)
 
 	else
 	{
-		for (i = 0; i < length_of_str; i++)
+		for (i = 0; i < los; i++)
 		{
 			*(s + i) = *(str + i);
 		}
