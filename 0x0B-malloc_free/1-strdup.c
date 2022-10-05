@@ -25,6 +25,8 @@ char *_strdup(char *str)
 	s = malloc(sizeof(char) * los);
 	if (s == NULL)
 	{
+		printf("failed to allocate memory\n");
+		
 		return (NULL);
 	}
 
