@@ -16,10 +16,10 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	if (s1 == NULL && s2 != NULL)
 		printf("%s\n", s2);
-		return (NULL);
+			return (NULL);
 	if (s1 != NULL && s2 == NULL)
 		printf("%s\n", s1);
-		return (NULL);
+			return (NULL);
 
 	for (; *(s1 + i) != '\0'; i++)
 		ls1 = i + 2;
