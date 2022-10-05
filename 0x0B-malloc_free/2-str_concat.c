@@ -10,15 +10,15 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	int i = 0, b = 0, ls1 = 0, ls2 = 0, int los = 0, int c = 0;
+	int i = 0, b = 0, ls1 = 0, ls2 = 0, los = 0, c = 0;
 
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	else if (s1 == NULL && s2 != NULL)
+	if (s1 == NULL && s2 != NULL)
 		printf("%s\n", s2);
 		return (NULL);
-	else if (s1 != NULL && s2 == NULL)
-		printf("%s\n", s1)
+	if (s1 != NULL && s2 == NULL)
+		printf("%s\n", s1);
 		return (NULL);
 
 	for (; *(s1 + i) != '\0'; i++)
