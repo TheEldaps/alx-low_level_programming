@@ -18,11 +18,12 @@ char *_strdup(char *str)
 	int a = 0;
 
 	if (str == NULL)
-                {
-                        return (NULL);
-                }
+	{
+		return (NULL);
+	}
 	else
-	{	for (; *(str + a) != '\0'; a++)
+	{
+		for (; *(str + a) != '\0'; a++)
 		{
 			los = a + 2;
 		}
