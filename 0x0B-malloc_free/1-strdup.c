@@ -15,18 +15,16 @@ char *_strdup(char *str)
 	char *s;
 	int i;
 	int los = 0;
-	int a = 1;
+	int a = 0;
 
 	for (; *(str + a) != '\0'; a++)
 	{
-		los = a;
+		los = a + 2;
 	}
-	los = los + 1;
+
 	s = malloc(sizeof(char) * los);
 	if (s == NULL)
-	{
-		printf("failed to allocate memory\n");
-		
+	{	
 		return (NULL);
 	}
 
