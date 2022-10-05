@@ -19,7 +19,7 @@ char *_strdup(char *str)
 
 	for (; *(str + a) != '\0'; a++)
 	{
-		if (*(str + 0) == '\0')
+		if (str == NULL)
 		{
 			printf("failed to allocate memory\n");
 			return (NULL);
