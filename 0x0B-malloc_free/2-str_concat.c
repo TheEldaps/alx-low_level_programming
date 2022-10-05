@@ -19,6 +19,9 @@ char *str_concat(char *s1, char *s2)
 	int los = 0;
 	int c = 0;
 
+	if (s1 == '\0' || s2 == '\0')
+		return (NULL);
+
 	for (; *(s1 + i) != '\0'; i++)
 	{
 		ls1 = i + 2;
