@@ -17,20 +17,20 @@ char *_strdup(char *str)
 	int los = 0;
 	int a = 0;
 
-	for (; *(str + a) != '\0'; a++)
-	{
-		if (str == NULL)
+	if (str == NULL)
+                {
+                        return (NULL);
+                }
+	else
+	{	for (; *(str + a) != '\0'; a++)
 		{
-			return (NULL);
+			los = a + 2;
 		}
-		else
-		los = a + 2;
 	}
 
 	s = malloc(sizeof(char) * los);
 	if (s == NULL)
 	{
-		printf("failed to allocate memory\n");
 		return (NULL);
 	}
 
