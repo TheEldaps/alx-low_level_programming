@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- *_strdup - function returns a pointer to an allocated space containing a string
- *@str: a pointer to string 
+ *_strdup - function returns a pointer/
+*to an allocated space containing a string
+ *@str: a pointer to string
  *malloc: a function that allocates space in the heap
  *free - this function frees up space
  *Return: a pointer or NULL
@@ -13,7 +14,7 @@ char *_strdup(char *str)
 {
 	char *s;
 	int i;
-	int length_of_str = (sizeof(*str) / sizeof(char));
+	int length_of_str = sizeof(str);
 
 	s = malloc(sizeof(char) * length_of_str);
 	if (s == NULL)
