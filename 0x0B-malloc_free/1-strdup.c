@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
  *_strdup - function returns a pointer/
 *to an allocated space containing a string
