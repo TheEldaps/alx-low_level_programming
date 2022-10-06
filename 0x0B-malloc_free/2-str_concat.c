@@ -1,38 +1,37 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
+
 /**
- *str_concat - concatenates two strings
- *@s1: a string
- *@s2: a string
- *Return: Null or a pointer
- */
+* str_concat - a function that concatenates two strings.
+*@s1:First string
+*@s2:Second string
+*
+*Return: NULL in case of failure , but pointer to new string in
+*case of success
+*/
+
 char *str_concat(char *s1, char *s2)
 {
-	char *s;
-	int i = 0, b = 0, ls1 = 0, ls2 = 0, los = 0, c = 0;
+	char *concat_str;
+	int index, concat_index = 0,  len = 0;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
-	if (s1 == NULL && s2 != NULL)
-		printf("%s\n", s2);
-			return (NULL);
-	if (s1 != NULL && s2 == NULL)
-		printf("%s\n", s1);
-			return (NULL);
+	if (s1 == NULL)
+		s1 = "";
 
-	for (; *(s1 + i) != '\0'; i++)
-		ls1 = i + 2;
-	for (; *(s2 + b) != '\0'; b++)
-		ls2 = b + 2;
-	los = ls1 + ls2 - 1;
-	s = malloc(sizeof(char) * los);
-	if (s == NULL)
+	if (s2 == NULL)
+		s2 = "";
+
+	for (index = 0; s1[index] || s2[index]; index++)
+		len++;
+
+	concat_str = malloc(sizeof(char) * len);
+
+	if (concat_str == NULL)
 		return (NULL);
-	for (i = 0; *(s1 + i) != '\0'; i++)
-		*(s + i) = *(s1 + i);
-	for (; *(s2 + c) != '\0'; c++, i++)
-		*(s + i) = *(s2 + c);
-	*(s + i) = '\0';
-	return (s);
-}
+
+	for (index = 0; s1[index]; index++)
+		concat_str[concat_index++] = s1[index];
+
+	for (index = 0; s2[index]; index++)
+		concat_str[concat_index++] = s2[index];
+
+	return (concat_str);
