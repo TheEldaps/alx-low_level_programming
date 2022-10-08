@@ -7,7 +7,6 @@
  * @s2: a string
  * @n: ans integer value
  * Return: the pointer or error
- *
  */
 
 
