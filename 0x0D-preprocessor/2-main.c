@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-/** main - starting point for the programme
-*Return: end ooint for the programme
-*/
+/**
+ *  main - starting point for the programme
+ *  Return: end ooint for the programme
+ */
+
 
 void main(void)
 {
