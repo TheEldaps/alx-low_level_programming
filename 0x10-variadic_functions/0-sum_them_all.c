@@ -11,15 +11,17 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 	}
 
-	else
 		va_list data;
 
 		va_start(data, n);
 		for (i = 0; i < n; i++)
 		{
-			sum = sum + va_args;
+			sum = sum + va_arg(data, int);
 		}
-		return (sum)
+
+		va_end(data);
+
+		return (sum);
 
 	
 }
